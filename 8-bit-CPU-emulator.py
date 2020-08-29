@@ -112,7 +112,7 @@ while HLT           ==  0:                # Instruction cycle.
           NE        =   0
           IN        =   0
           FI        =   0
-    if CYC%2        !=  0:                # Decode/execute phase (odd CYC, i.e. LOW clock).
+    if CYC%2        !=  0:                # Decode/execute phase (odd CYC, i.e. HIGH clock).
        if IR        == '0000':            # OPCODE 0: NOP (No operation).
           HLT       =   0
           CI        =   0
