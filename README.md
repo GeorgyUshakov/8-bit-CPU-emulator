@@ -56,34 +56,34 @@ BB  : B-operand inverting buffer     : Inverts (negates) ALU B-operand upon requ
 
 *Instruction set :*
 
-0000 XXXX : NOP : No operation.
+00 : NOP : No operation.
                   
-0001 XXXX : HLT : Halt.
+10 : HLT : Halt.
                   
-0010 AAAA : LDA : Load data at RAM address AAAA into register ACT, and pass data to ACC (through ALU).
+2X : LDA : Load data at RAM address X into register ACT, and pass data to ACC (through ALU).
                   
-0011 AAAA : ADD : Add data at RAM address AAAA to ACT (through ALU).
+3X : ADD : Add data at RAM address X to ACT (through ALU).
                   
-0100 AAAA : SUB : Subtract data at RAM address AAAA from ACT (through ALU).
+4X : SUB : Subtract data at RAM address X from ACT (through ALU).
                   
-0101 AAAA : STA : Store data from ACC in RAM at address AAAA.
+5X : STA : Store data from ACC in RAM at address X.
                   
-0110 XXXX : INC : Increment ACT.
+60 : INC : Increment ACT.
                   
-0111 XXXX : DEC : Decremenet ACT.
+70 : DEC : Decremenet ACT.
                   
-1000 AAAA : JCZ : Conditional jump if zero flag is HIGH to RAM address AAAA.
+8X : JCZ : Conditional jump if zero flag is HIGH to RAM address X.
                   
-1001 AAAA : JNZ : Conditional jump if zero flag is LOW to RAM address AAAA.
+9X : JNZ : Conditional jump if zero flag is LOW to RAM address X.
                   
-1010 AAAA : JCC : Conditional jump if carry flag is HIGH to RAM address AAAA.
+AX : JCC : Conditional jump if carry flag is HIGH to RAM address X.
                   
-1011 AAAA : JNC : Conditional jump if carry flag is LOW to RAM address AAAA.
+BX : JNC : Conditional jump if carry flag is LOW to RAM address X.
                   
-1100 AAAA : JMP : Unconditional Jump to RAM address AAAA.
+CX : JMP : Unconditional Jump to RAM address R.
                   
-1101 AAAA : NOP : No operation. Yet.
+D0 : NOP : No operation. Yet.
                   
-1110 AAAA : NOP : No operation. Yet.
+E0 : NOP : No operation. Yet.
                   
-1111 AAAA : NOP : No operation. Yet.
+F0 : NOP : No operation. Yet.
