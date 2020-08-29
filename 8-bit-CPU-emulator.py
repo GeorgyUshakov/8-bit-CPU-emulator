@@ -1,18 +1,18 @@
-RAM                 = {'0000':'00101101', # RAM address 0.
-                       '0001':'01011111', # RAM address 1.
-                       '0010':'00101110', # RAM address 2.
-                       '0011':'01110000', # RAM address 3.
-                       '0100':'01011110', # RAM address 4.
-                       '0101':'10001010', # RAM address 5.
-                       '0110':'00101101', # RAM address 6.
-                       '0111':'00111111', # RAM address 7.
-                       '1000':'01011111', # RAM address 8.
-                       '1001':'11000010', # RAM address 9.
-                       '1010':'00010000', # RAM address A.
+RAM                 = {'0000':'00000000', # RAM address 0.
+                       '0001':'00000000', # RAM address 1.
+                       '0010':'00000000', # RAM address 2.
+                       '0011':'00000000', # RAM address 3.
+                       '0100':'00000000', # RAM address 4.
+                       '0101':'00000000', # RAM address 5.
+                       '0110':'00000000', # RAM address 6.
+                       '0111':'00000000', # RAM address 7.
+                       '1000':'00000000', # RAM address 8.
+                       '1001':'00000000', # RAM address 9.
+                       '1010':'00000000', # RAM address A.
                        '1011':'00000000', # RAM address B.
                        '1100':'00000000', # RAM address C.
-                       '1101':'00001111', # RAM address D.
-                       '1110':'00000101', # RAM address E.
+                       '1101':'00000000', # RAM address D.
+                       '1110':'00000000', # RAM address E.
                        '1111':'00000000'} # RAM address F.
 
 BUS                 =  '00000000'         # Main 8-bit data BUS.
