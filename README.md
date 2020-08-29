@@ -18,7 +18,7 @@ Lower nibble    : RAM address pointer.
 
 
 
-Buses    :
+*Buses    :*
 
 BUS      : Bus         : Transfers instruction opcodes, RAM address pointers, data, ALU results.
 
@@ -26,7 +26,7 @@ MEMLANE  : Memory lane : Transfers RAM address pointers to RAM from PC and MAR.
 
 
 
-Registers:
+*Registers:*
 
 ACT : Accumulator temporary register : Stores ALU A-operand from BUS.
 
@@ -44,7 +44,7 @@ CF  : Carry (overflow) flag register : Stores ALU final carry (overflow) bit.
 
 
 
-Circuits:
+*Circuits:*
 
 PCI : Program counter incrementer    : Increments program counter through series of half-adder operations.
 
@@ -54,7 +54,7 @@ BB  : B-operand inverting buffer     : Inverts (negates) ALU B-operand upon requ
 
 
 
-Instruction set :
+*Instruction set :*
 
 0000 XXXX : NOP : No operation.
                   
