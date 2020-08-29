@@ -4,6 +4,8 @@ This is a Python emulator for a simple 8-bit computer central processing unit.
 
 Each instrution can run on only two clock cycles: a fetch phase and a decode/execute phase.
 
+
+
 Data width      : 8 bits (1 byte).
 
 Address width   : 4 bits (16 RAM addresses).
@@ -14,9 +16,15 @@ Upper nibble    : Instruction opcode.
 
 Lower nibble    : RAM address pointer.
 
-Buses           : BUS      : Bus         : Transfers instruction opcodes, RAM address pointers, data, ALU results.
 
-                  MEMLANE  : Memory lane : Transfers RAM address pointers to RAM from PC and MAR.
+
+Buses    :
+
+BUS      : Bus         : Transfers instruction opcodes, RAM address pointers, data, ALU results.
+
+MEMLANE  : Memory lane : Transfers RAM address pointers to RAM from PC and MAR.
+
+
 
 Registers:
 
@@ -34,6 +42,8 @@ ZF  : Zero flag register             : Intakes and stores HIGH if enabled and if
 
 CF  : Carry (overflow) flag register : Stores ALU final carry (overflow) bit.
 
+
+
 Circuits:
 
 PCI : Program counter incrementer    : Increments program counter through series of half-adder operations.
@@ -41,6 +51,8 @@ PCI : Program counter incrementer    : Increments program counter through series
 ALU : Arithmetic logic unit          : Performs addition of two operands: output of ACT, output of B-operand buffer/inverter.
 
 BB  : B-operand inverting buffer     : Inverts (negates) ALU B-operand upon request.
+
+
 
 Instruction set :
 
