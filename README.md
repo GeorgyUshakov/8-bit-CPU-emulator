@@ -4,7 +4,7 @@ This is a Python emulator for a simple 8-bit computer central processing unit.
 
 Each instrution can run on only two clock cycles: a fetch phase and a decode/execute phase.
 
-
+_______________________________________________________________________________
 
 Data width      : 8 bits (1 byte).
 
@@ -16,7 +16,7 @@ Upper nibble    : Instruction opcode.
 
 Lower nibble    : RAM address pointer.
 
-
+_______________________________________________________________________________
 
 *Buses    :*
 
@@ -24,7 +24,7 @@ BUS      : Bus         : Transfers instruction opcodes, RAM address pointers, da
 
 MEMLANE  : Memory lane : Transfers RAM address pointers to RAM from PC and MAR.
 
-
+_______________________________________________________________________________
 
 *Registers:*
 
@@ -42,7 +42,7 @@ ZF  : Zero flag register             : Intakes and stores HIGH if enabled and if
 
 CF  : Carry (overflow) flag register : Stores ALU final carry (overflow) bit.
 
-
+_______________________________________________________________________________
 
 *Circuits:*
 
@@ -52,7 +52,7 @@ ALU : Arithmetic logic unit          : Performs addition of two operands: output
 
 BB  : B-operand inverting buffer     : Inverts (negates) ALU B-operand upon request.
 
-
+_______________________________________________________________________________
 
 *Instruction set with assembly :*
 
@@ -88,9 +88,9 @@ E0 : NOP : No operation. Yet.
                   
 F0 : NOP : No operation. Yet.
 
+_______________________________________________________________________________
 
-
-* ASSEMBLY LANGUAGE :*
+*ASSEMBLY LANGUAGE:*
 
 Spaces, newlines, semicolons (;) can be added and won't be read. Other characters will confuse the assembler.
 
