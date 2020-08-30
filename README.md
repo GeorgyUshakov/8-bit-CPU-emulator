@@ -54,7 +54,7 @@ BB  : B-operand inverting buffer     : Inverts (negates) ALU B-operand upon requ
 
 
 
-*Instruction set :*
+*Instruction set with assembly :*
 
 00 : NOP : No operation.
                   
@@ -87,3 +87,16 @@ D0 : NOP : No operation. Yet.
 E0 : NOP : No operation. Yet.
                   
 F0 : NOP : No operation. Yet.
+
+
+
+* ASSEMBLY LANGUAGE :*
+Spaces, newlines, semicolons (;) can be added and won't be read. Other characters will confuse the assembler.
+
+For data input: Address = Value
+e.g. F = 01
+     Value 1 stored in RAM address F.
+
+For instruction: Address : Instruction Operand
+e.g. 0 : LDA F
+     When program counter points to RAM address 0, data at RAM address F is loaded into ACT.
