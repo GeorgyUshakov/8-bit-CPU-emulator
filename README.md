@@ -91,6 +91,7 @@ F0 : NOP : No operation. Yet.
 
 
 * ASSEMBLY LANGUAGE :*
+
 Spaces, newlines, semicolons (;) can be added and won't be read. Other characters will confuse the assembler.
 
 For data input: Address = Value
